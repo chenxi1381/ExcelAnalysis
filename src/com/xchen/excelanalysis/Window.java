@@ -56,7 +56,7 @@ public class Window extends JFrame {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 326, 237);
-		setTitle("tools");
+		setTitle("桑妮宝贝专用小工具之excel模糊匹配");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -68,6 +68,7 @@ public class Window extends JFrame {
 		contentPane.setLayout(gbl_contentPane);
 		
 		JLabel label = new JLabel("\u6587\u4EF6\u7684\u7EDD\u5BF9\u8DEF\u5F84\uFF1A");
+		label.setToolTipText("\u597D\u50CF\u548C\u4F60\u5728\u4E00\u8D77\u54C7");
 		GridBagConstraints gbc_label = new GridBagConstraints();
 		gbc_label.insets = new Insets(0, 0, 5, 5);
 		gbc_label.anchor = GridBagConstraints.EAST;
@@ -88,6 +89,7 @@ public class Window extends JFrame {
 		filePath.setColumns(10);
 		
 		JLabel lblSheet = new JLabel("sheet1\u540D\u79F0\uFF1A");
+		lblSheet.setToolTipText("\u6CA1\u9519\uFF0C\u6211\u5C31\u662F\u5F69\u86CB");
 		GridBagConstraints gbc_lblSheet = new GridBagConstraints();
 		gbc_lblSheet.anchor = GridBagConstraints.EAST;
 		gbc_lblSheet.insets = new Insets(0, 0, 5, 5);
@@ -106,6 +108,7 @@ public class Window extends JFrame {
 		sheet1Text.setColumns(10);
 		
 		JLabel lblSheet_1 = new JLabel("sheet2\u540D\u79F0\uFF1A");
+		lblSheet_1.setToolTipText("\u60F3\u4F60\u3002\u3002\u3002");
 		GridBagConstraints gbc_lblSheet_1 = new GridBagConstraints();
 		gbc_lblSheet_1.anchor = GridBagConstraints.EAST;
 		gbc_lblSheet_1.insets = new Insets(0, 0, 5, 5);
@@ -124,6 +127,7 @@ public class Window extends JFrame {
 		sheet2Text.setColumns(10);
 		
 		JLabel label_1 = new JLabel("\u6807\u9898\u540D\u79F0\uFF1A");
+		label_1.setToolTipText("\u6C6A\u6C6A\u6C6A~");
 		GridBagConstraints gbc_label_1 = new GridBagConstraints();
 		gbc_label_1.anchor = GridBagConstraints.EAST;
 		gbc_label_1.insets = new Insets(0, 0, 5, 5);
@@ -161,6 +165,7 @@ public class Window extends JFrame {
 		valueText.setColumns(10);
 		
 		JButton button = new JButton("\u8BD5\u8BD5\u770B");
+		button.setToolTipText("\u9690\u85CF\u7684\u5F69\u86CB\u4E4B\u6211\u7231\u6851\u59AE\u5B9D\u8D1D");
 		GridBagConstraints gbc_button = new GridBagConstraints();
 		gbc_button.insets = new Insets(0, 0, 5, 0);
 		gbc_button.gridwidth = 3;
@@ -178,6 +183,7 @@ public class Window extends JFrame {
 		contentPane.add(button, gbc_button);
 		
 		resultTxt = new JLabel("\u7ED3\u679C");
+		resultTxt.setToolTipText("\u4E0D\u8981\u76EF\u7740\u6211\u770B\uFF0C\u6211\u4F1A\u5BB3\u7F9E");
 		resultTxt.setVerticalAlignment(SwingConstants.TOP);
 		GridBagConstraints gbc_resultTxt = new GridBagConstraints();
 		gbc_resultTxt.anchor = GridBagConstraints.WEST;
@@ -190,11 +196,11 @@ public class Window extends JFrame {
 		
 		
 		
-		filePath.setText("D:\\test1.xlsx");
-		sheet1Text.setText("sheet1");
-		sheet2Text.setText("sheet2");
-		titleText.setText("名称");
-		valueText.setText("价格");
+//		filePath.setText("D:\\test1.xlsx");
+//		sheet1Text.setText("sheet1");
+//		sheet2Text.setText("sheet2");
+//		titleText.setText("名称");
+//		valueText.setText("价格");
 		setVisible(true);
 	}
 	public void setResult(String resultMsg){
